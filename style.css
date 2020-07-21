@@ -1,0 +1,169 @@
+body {
+  background: #202028;
+}
+
+h2 {
+  color: white;
+  position: relative;
+  margin-left: 10px;
+  width: 300px;
+  margin-top: 120px;
+  margin-bottom: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.grid {
+  width: 304px;
+  margin-top: 25px;
+  height: 604px;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  border: solid 2px #fff;
+}
+
+.grid div {
+  height: 30px;
+  width: 30px;
+}
+.gridcol {
+  margin-top: 30px;
+}
+.tetromino {
+  background-color: #00ffff;
+}
+
+.scoreCont {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 25px;
+  margin-top: 35px;
+  margin-bottom: 30px;
+  margin-left: 65px;
+}
+
+.resetButton {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 180px;
+  margin-left: 52px;
+}
+
+.img {
+  display: none;
+}
+
+.img .show {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.smlinks {
+  /* display: none; */
+  margin-top: 400px;
+  margin-left: 100px;
+}
+img {
+  border-radius: 0.7%;
+}
+.hide {
+  display: none;
+}
+
+#hide {
+  margin-top: 5px;
+  margin-right: 50px;
+}
+
+.show {
+  display: flex;
+  justify-content: center;
+  /* margin-right: 80px; */
+}
+
+.git {
+  /* background-color: #88d9dc; */
+  border-radius: 12%;
+  margin: 3px;
+}
+
+.link {
+  /* background-color: #88d9dc; */
+}
+/* #harder {
+  background-color: #00ffff;
+  color: white;
+  border-radius: 12%;
+  height: 30px;
+  margin: 3px;
+  font-family: sans-serif;
+}
+
+#harder {
+}
+
+#see {
+} */
+
+.btn {
+  color: #00ffff;
+  border: solid 1px #00ffff;
+  margin: 3px;
+}
+.btn:hover {
+  background-color: #00ffff !important;
+}
+
+/* mobile-friendly */
+
+@media only screen and (max-width: 1090px) {
+  .hidecol {
+    /* background-color: lightblue; */
+  }
+  .gridcol {
+    margin-left: 45px;
+  }
+  .resetButton {
+    display: none;
+  }
+  h2 {
+    margin-top: 20px;
+    margin-left: 42px;
+    font-size: 51px;
+  }
+
+  h3 {
+    font-size: 60px;
+  }
+}
+
+#mobilerotate {
+  display: none;
+}
+
+audio {
+  width: 220px;
+  height: 35px;
+  /* color: #00ffff; */
+}
+
+.audio {
+  margin-left: 33px;
+}
+/* 
+img {
+  height: 15px;
+  width: 15px;
+} */
+
+.playstop {
+  margin-top: 3.5px;
+  margin-right: 35px;
+}

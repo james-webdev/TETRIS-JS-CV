@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tetris my_version</title>
+    <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous"
+  />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- <button id="hardest">Hardest>/button> -->
+    <div class="container">
+     
+        <div class="img row">
+          <div class="col-sm-3 col-md-9 col-lg-6">
+            <embed src="jamesroe.CV.8_7.pdf" width="670" height="800" type="" />
+          </div>
+          <div class="col-lg-2"></div>
+          <div class="smlinks col-sm-10 col-md-9 col-lg-2">
+            <!-- <button class="git"><img height="25px" width="23px" src="git.png"></img></button>
+            <button class="link"><img height="25px" width="23px" src="linkedin2.png"></img></button>   -->
+            <button id="git" type="button" class="btn btn-outline-primary">
+               <img height="30px" width="30px" src="git.png"></img>
+            </button>
+            <button id="link" type="button" class="btn btn-outline-primary"> <img height="30px" width="30px" src="linkedin2.png"></img></button>  
+          </div>
+        </div>
+        <div class="row">
+          <div id="hide" class="col-sm-8 col-md-8 col-lg-4 hidecol">
+           <div>
+              <h2>50 points pour voir mon CV !</h2>
+           </div>
+           <div class="scoreCont">
+               <h3><span class="score">0</span></h3>
+           </div>
+        <div class="resetButton">
+        <!-- <button id="button">Pause</button> -->
+            <button id="harder" type="button" class="btn btn-outline-primary">
+               Faster!
+            </button>
+            <button id="see" type="button" class="btn btn-outline-primary">
+               Voire sans jouer
+            </button>
+        <div class="audio">
+          <audio id="player" src="Tetris.mp3"></audio>
+            <div class="playstop"> 
+              <button class="btn btn-outline-primary" onclick="document.getElementById('player').play()">▷</button> 
+              <button class="btn btn-outline-primary"  onclick="document.getElementById('player').pause()">☐</button>
+              <!-- <button class="btn btn-outline-primary mobilerotate"></button> -->
+              <!-- <img src="play-button.png"> </img> -->
+            </div>
+        </div>
+        </div> 
+      </div>
+      <div class="col-sm-8 col-md-8 col-lg-6 gridcol">
+      <div id="hide" class="grid">
+        <!-- <div class="top"></div>
+        <div class="top"></div>
+        <div class="top"></div>
+        <div class="top"></div>
+        <div class="top"></div>
+        <div class="top"></div>
+        <div class="top"></div>
+        <div class="top"></div>
+        <div class="top"></div>
+        <div class="top"></div> -->
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="taken"></div>
+        <div class="taken"></div>
+        <div class="taken"></div>
+        <div class="taken"></div>
+        <div class="taken"></div>
+        <div class="taken"></div>
+        <div class="taken"></div>
+        <div class="taken"></div>
+        <div class="taken"></div>
+        <div class="taken"></div>
+      </div>
+    </div>
+    </div>
+    
+    </div>
+    <script src="./vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="tetris.js"></script>
+  </body>
+</html>
