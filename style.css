@@ -106,11 +106,13 @@ img {
   font-family: sans-serif;
 }
 
-#harder {
-}
 
 #see {
 } */
+
+#harder {
+  margin-bottom: 6px;
+}
 
 .btn {
   color: #00ffff;

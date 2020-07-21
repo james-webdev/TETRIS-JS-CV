@@ -254,7 +254,6 @@ function chooseSide(e) {
   // }
 }
 
-// TODO make a switch
 //assign functions to keyCodes
 function control(e) {
   if (e.keyCode === 37) {
@@ -272,6 +271,32 @@ function control(e) {
   }
 }
 document.addEventListener("keydown", control);
+
+//SWITCH//
+// function control(e) {
+//   switch ((e.keyCode) {
+//     case "37":
+//       moveLeft();
+//       console.log("moving left");
+//       break;
+//     case "38":
+//       rotate();
+//       console.log("moving about");
+//       break;
+//     case "39":
+//       moveRight();
+//       console.log("moving right");
+//       break;
+//     case "40":
+//       moveDown();
+//       console.log("moving down");
+//       break;
+//     default:
+//       console.log("that is not a valid move");
+//       break;
+//   }
+// }
+// document.addEventListener("keydown", control);
 
 ///FIX ROTATION OF TETROMINOS A THE EDGE
 function isAtRight() {
