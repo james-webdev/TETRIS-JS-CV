@@ -222,29 +222,37 @@ function chooseSide(e) {
   const { screenX, screenY } = touchObject;
   console.log(screenY, screenX);
   const { clientHeight, clientWidth } = body;
-  // console.log(clientHeight);
-  if (screenY < clientHeight / 2) {
+  console.log(clientHeight, clientWidth);
+
+  if (screenX > clientWidth / 2 && screenY < clientHeight / 2) {
+    moveDown();
+    console.log("moving down");
+  } else if (screenY < clientHeight / 2 && screenX < clientWidth / 2) {
     rotate();
     console.log("rotating");
-  } else if (screenX < clientWidth / 2) {
+    // } else if (screenX > clientWidth / 2 && screenY < clientHeight / 2) {
+    //   moveDown();
+    //   console.log("moving down");
+  } else if (screenX < clientWidth / 2 && screenY > clientHeight / 2) {
     moveLeft();
     console.log("moving left");
-  } else if (screenX > clientWidth / 2) {
+  } else if (screenX > clientWidth / 2 && screenY > clientHeight / 2) {
     moveRight();
     console.log("moving right");
-
-    // const rotateMob = document.querySelector(".mobilerotate")
-    // rotateMob.addEventListener("touchstart", function(){
-    // rotateMob.style.display("flex")
-    //   rotate();
-    // console.log("rotating");
-    //   })
-    // } else if (screenY < clientHeight / 2) {
-    //   rotate();
-    //   console.log("rotating");
-    // }
   }
+
+  // const rotateMob = document.querySelector(".mobilerotate")
+  // rotateMob.addEventListener("touchstart", function(){
+  // rotateMob.style.display("flex")
+  //   rotate();
+  // console.log("rotating");
+  //   })
+  // } else if (screenY < clientHeight / 2) {
+  //   rotate();
+  //   console.log("rotating");
+  // }
 }
+
 // TODO make a switch
 //assign functions to keyCodes
 function control(e) {
