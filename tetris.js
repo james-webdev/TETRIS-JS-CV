@@ -217,6 +217,7 @@ document.addEventListener("DOMContentLoaded", startup);
 
 function chooseSide(e) {
   // console.log(e);
+  e.preventDefault();
   const body = document.querySelector("body");
   const touchObject = e.changedTouches[0];
   const { screenX, screenY } = touchObject;
