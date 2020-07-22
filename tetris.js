@@ -158,7 +158,7 @@ function stop() {
   }
 }
 
-//move the tetromino left, unless is at the edge
+//move the tetromino left, unless is at the left edge
 function moveLeft() {
   unDraw();
   const isAtLeftEdge = randomTetRotArray.some(
@@ -175,7 +175,7 @@ function moveLeft() {
   draw();
 }
 
-//move the tetromino right, unless is at the edge
+//move the tetromino right, unless is at the right edge
 function moveRight() {
   unDraw();
   const isAtRightEdge = randomTetRotArray.some(
@@ -205,7 +205,9 @@ function rotate() {
   draw();
 }
 
-//touch for mobile//
+//touch events for mobile//
+//top left quadrant rotate, top right quadrant move down//
+//bottom quadrant left move left, bottom right quadrant move right//
 
 function startup() {
   const body = document.querySelector("body");
@@ -272,7 +274,7 @@ function control(e) {
 }
 document.addEventListener("keydown", control);
 
-//SWITCH//
+//TRY A SWITCH//
 // function control(e) {
 //   switch ((e.keyCode) {
 //     case "37":
@@ -298,7 +300,8 @@ document.addEventListener("keydown", control);
 // }
 // document.addEventListener("keydown", control);
 
-///FIX ROTATION OF TETROMINOS A THE EDGE
+///FIX ROTATION OF TETROMINOS AT THE EDGE // to fix bug, code taken from tutorial  https://www.youtube.com/watch?v=w1JJfK09ujQ&feature=youtu.be
+
 function isAtRight() {
   return randomTetRotArray.some(
     (index) => (currentPosition + index + 1) % width === 0
