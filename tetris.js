@@ -88,6 +88,7 @@ let currentRotation = 0;
 let randomTetRotArray = theTetrominoes[random][currentRotation];
 console.log(randomTetRotArray);
 
+//draw a tet to the grid//
 function draw() {
   randomTetRotArray.forEach((gridIndex) => {
     // console.log(div);
@@ -95,6 +96,7 @@ function draw() {
   });
 }
 
+//remove a tet from the grid//
 function unDraw() {
   randomTetRotArray.forEach((gridIndex) => {
     // console.log(div);
@@ -208,6 +210,7 @@ function rotate() {
 //touch events for mobile//
 //top left quadrant rotate, top right quadrant move down//
 //bottom quadrant left move left, bottom right quadrant move right//
+//works fine but couldnt turn off double tap zoom which interferes with game//
 
 function startup() {
   const body = document.querySelector("body");
@@ -300,7 +303,7 @@ document.addEventListener("keydown", control);
 // }
 // document.addEventListener("keydown", control);
 
-///FIX ROTATION OF TETROMINOS AT THE EDGE // to fix bug, code taken from tutorial  https://www.youtube.com/watch?v=w1JJfK09ujQ&feature=youtu.be
+///FIX ROTATION OF TETROMINOS AT THE EDGE // to fix bug, code taken from tutorial (until line 333)  https://www.youtube.com/watch?v=w1JJfK09ujQ&feature=youtu.be
 
 function isAtRight() {
   return randomTetRotArray.some(
@@ -351,6 +354,7 @@ function removeLine() {
     if (row.every((index) => allDivs[index].classList.contains("taken"))) {
       score += 10;
       scoreCard.innerHTML = score;
+      //show CV//
       if (score >= 50) {
         // alert("show CV");
         // clearInterval(timerId);
