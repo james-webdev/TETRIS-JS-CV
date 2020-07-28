@@ -207,10 +207,9 @@ function rotate() {
   draw();
 }
 
-//touch events for mobile//
+//touch events for mobile// It works on mobile
 //top left quadrant rotate, top right quadrant move down//
 //bottom quadrant left move left, bottom right quadrant move right//
-//works fine but couldnt turn off double tap zoom which interferes with game//
 
 function startup() {
   const body = document.querySelector("body");
