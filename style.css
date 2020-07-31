@@ -145,6 +145,10 @@ img {
   h3 {
     font-size: 60px;
   }
+
+  .img {
+    display: none; 
+  }
 }
 
 #mobilerotate {
